@@ -1,0 +1,23 @@
+body {
+	background-color: #EAE1D4;
+}
+
+.classBtn {
+	margin: 30px;
+	width: 242px;
+}
+
+.row .btn-default {
+	background-color: #2AABA4;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.choice .btn {
+	border-color: #8c8c8c;
+}
+
+.choice {
+	padding: 30px;
+}
