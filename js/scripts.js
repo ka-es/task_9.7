@@ -91,33 +91,33 @@ function checkRoundWinner(playerPick, computerPick) {
 
 	var winnerIs = 'player'; 
 
-	if (playerPick == computerPick) { 
+	if (playerPick === computerPick) { 
 	winnerIs = 'noone'; // remis 
 	} 
 	else if ( 
-		(computerPick == 'rock' && playerPick == 'scissors') || 
-		(computerPick == 'scissors' && playerPick == 'paper') || 
-		(computerPick == 'paper' && playerPick == 'rock')) { 
+		(computerPick === 'rock' && playerPick === 'scissors') || 
+		(computerPick === 'scissors' && playerPick === 'paper') || 
+		(computerPick === 'paper' && playerPick === 'rock')) { 
 		winnerIs = 'computer'; 
 		} 
 
-	if (winnerIs == 'player') { 
+	if (winnerIs === 'player') { 
 		playerResultElem.innerHTML = "Wygrana!"; 
 		player.score++; 
-	} else if (winnerIs == 'computer') { 
+	} else if (winnerIs === 'computer') { 
 		computerResultElem.innerHTML = "Wygrana!"; 
 		computer.score++; 
 	} 
 	setGamePoints();
 
-	if (player.score == 10) {
+	if (player.score === 10) {
 		alert('Wygrana!');
 		gameState = 'ended'		
 		setGameElements();
 		
     } 
 
-    if (computer.score == 10) {
+    if (computer.score === 10) {
     	alert('Wygrywa komputer');
     	gameState = 'ended';
     	setGameElements();
